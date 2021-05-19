@@ -8,14 +8,11 @@ class Selectors {
     }
 
 
-    accaunt () {
-        return cy.get('#KB > div.book-page.book-page--home > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a > h4');
-    }  
     input () {
         return cy.get('#js-search-input');
     }
     search_results () {
-        return cy.get('#js-advanced-search-results');
+        return cy.get('#js-advanced-search-results-container');
     }
 
 
@@ -27,4 +24,4 @@ class Selectors {
     }
 }
 
-export default Selector;
+export default Selectors;
